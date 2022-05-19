@@ -5,10 +5,8 @@
 
 int main(int argc, char *argv[])
 {
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("You are %d years old", age);
-
-    return 0;
+    if(argc==1)
+    {
+        printf("parent program passed is %s\r\n", argv[0]);
+    };
 }
